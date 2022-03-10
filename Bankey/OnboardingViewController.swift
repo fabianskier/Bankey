@@ -15,13 +15,13 @@ class OnboardingViewController: UIViewController {
     
     let heroImageName: String
     let titleText: String
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
         layout()
     }
-    
+   
     init(heroImageName: String, titleText: String) {
         self.heroImageName = heroImageName
         self.titleText = titleText
@@ -39,7 +39,7 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController {
     func style() {
         view.backgroundColor = .systemBackground
-        
+
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 20
@@ -54,7 +54,6 @@ extension OnboardingViewController {
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
         label.text = titleText
-        
     }
     
     func layout() {
