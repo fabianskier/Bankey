@@ -9,7 +9,7 @@ import UIKit
 
 let appColor: UIColor = .systemTeal
 
-@main
+ @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
